@@ -1,0 +1,7 @@
+# Java sandbox project
+Sandbox project for little java thingies
+
+## Katas
+* https://www.codewars.com/kata/are-they-the-same 
+    * `Compare.java`, `CompareTest.java`, `CompareTestProperty.java`
+    * had fun with `java-quickcheck`
