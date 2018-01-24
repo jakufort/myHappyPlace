@@ -1,10 +1,10 @@
-package main;
+package main.kata.compare;
 
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-class Compare {
+public class Compare {
 
     boolean compare(int a[], int b[]) {
         if (a == null || b == null) {

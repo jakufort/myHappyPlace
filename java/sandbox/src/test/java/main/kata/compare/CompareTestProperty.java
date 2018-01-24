@@ -1,4 +1,4 @@
-package main;
+package main.kata.compare;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assume.*;
@@ -10,17 +10,12 @@ import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 
 import static org.hamcrest.number.OrderingComparison.greaterThan;
 
-import org.hamcrest.Matchers;
-import org.hamcrest.collection.IsIterableContainingInAnyOrder;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
-import utils.PairGenerator;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @RunWith(JUnitQuickcheck.class)
@@ -50,7 +45,7 @@ public class CompareTestProperty {
     }
 
     @Property(trials = 250)
-    public void secondArrayHaveAllSquaredNumbersOfFirstArray(@From(PairGenerator.class) Pair<List<Integer>, List<Integer>> input) {
+    public void secondArrayHaveAllSquaredNumbersOfFirstArray(@From(PairGeneratorForCompare.class) Pair<List<Integer>, List<Integer>> input) {
         int[] a = input.first.stream().mapToInt(Integer::intValue).toArray();
         int[] b = input.second.stream().mapToInt(Integer::intValue).toArray();
         Assertions.assertEquals(true, compare.compare(a, b));

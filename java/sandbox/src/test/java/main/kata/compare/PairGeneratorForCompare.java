@@ -1,4 +1,4 @@
-package utils;
+package main.kata.compare;
 
 import com.pholser.junit.quickcheck.Pair;
 import com.pholser.junit.quickcheck.generator.GenerationStatus;
@@ -8,15 +8,15 @@ import com.pholser.junit.quickcheck.random.SourceOfRandomness;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PairGenerator extends Generator<Pair> {
+public class PairGeneratorForCompare extends Generator<Pair> {
 
     private static final int MAX_SIZE = 1000;
 
-    public PairGenerator() {
+    public PairGeneratorForCompare() {
         this(Pair.class);
     }
 
-    protected PairGenerator(Class<Pair> type) {
+    private PairGeneratorForCompare(Class<Pair> type) {
         super(type);
     }
 

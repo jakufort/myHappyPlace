@@ -1,4 +1,4 @@
-package main;
+package main.kata.compare;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CompareTest {
 
-    Compare c = new Compare();
+    private Compare c = new Compare();
     @Test
     void simpleExample() {
         int[] a = new int[]{121, 144, 19, 161, 19, 144, 19, 11};

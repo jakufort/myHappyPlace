@@ -1,4 +1,6 @@
-package main;
+package main.kata;
+
+import main.kata.compare.Compare;
 
 public class Main {
 
